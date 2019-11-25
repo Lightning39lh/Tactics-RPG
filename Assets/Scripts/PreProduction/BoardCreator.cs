@@ -56,7 +56,6 @@ public class BoardCreator : MonoBehaviour
     {
         Rect r = GlobalRect();
         GrowRect(r);
-
     }
 	
 	public void ShrinkArea()
@@ -64,8 +63,13 @@ public class BoardCreator : MonoBehaviour
 		Rect r = RandomRect();
 		ShrinkRect(r);
 	}
+    public void ShrinkGlobal()
+    {
+        Rect r = GlobalRect();
+        ShrinkRect(r);
+    }
     //updatea el selector indicator
-	public void UpdateMarker()
+    public void UpdateMarker()
 	{
 		Tile t = tiles.ContainsKey(pos) ? tiles[pos] : null;
 		marker.localPosition = t != null ? t.center : new Vector3(pos.x, 0, pos.y);

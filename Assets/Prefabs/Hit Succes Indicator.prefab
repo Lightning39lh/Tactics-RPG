@@ -137,7 +137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 224, y: 130}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 192, y: 107}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1542486245447663116
@@ -180,7 +180,7 @@ MonoBehaviour:
   - name: Show
     myAnchor: 7
     parentAnchor: 7
-    offset: {x: 0, y: 130}
+    offset: {x: 160, y: 70}
 --- !u!1 &1542486245577843334
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,10 +397,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 25
     m_FontStyle: 3
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0

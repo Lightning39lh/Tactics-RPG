@@ -30,6 +30,8 @@ public class BoardCreatorInspector : Editor
             current.ShrinkArea();
         if (GUILayout.Button("Grow Global"))
             current.GrowGlobal();
+        if (GUILayout.Button("Shrink Global"))
+            current.ShrinkGlobal();
         if (GUILayout.Button("Save"))
             current.Save();
         if (GUILayout.Button("Load"))

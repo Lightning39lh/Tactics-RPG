@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5718889567961906622}
   - component: {fileID: 2150541319902727363}
   - component: {fileID: 385402964608112443}
-  - component: {fileID: 9204611177435448734}
   - component: {fileID: 4960195944072805312}
+  - component: {fileID: -9181670782194446365}
   m_Layer: 0
   m_Name: Charged Arrow
   m_TagString: Untagged
@@ -75,18 +75,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e07abda5564eab4997aafc95e4a77cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9204611177435448734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252666774713795141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b00e6b3882dd96944801a3837b4a5423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4960195944072805312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +88,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 6
+--- !u!114 &-9181670782194446365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252666774713795141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00e6b3882dd96944801a3837b4a5423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2232658742732260961
 GameObject:
   m_ObjectHideFlags: 0

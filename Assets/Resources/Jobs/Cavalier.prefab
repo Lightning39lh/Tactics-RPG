@@ -49,13 +49,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats: 1e0000000a0000002f0000003c0000000b0000003c0000006f000000
   growStats:
-  - 72
-  - 11
-  - 62
-  - 80
-  - 50
-  - 84
-  - 19
+  - 7.2
+  - 1.1
+  - 6.2
+  - 8
+  - 5
+  - 8.4
+  - 1.9
 --- !u!114 &3204511797157339947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 14
-  amount: 1
+  amount: 0
 --- !u!114 &446385409522732860
 MonoBehaviour:
   m_ObjectHideFlags: 0

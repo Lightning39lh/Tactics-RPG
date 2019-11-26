@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6500845177156012658}
   - component: {fileID: 626693119108610831}
   - component: {fileID: 1167292163137282295}
-  - component: {fileID: 7698744017749357138}
   - component: {fileID: 5889600089486691340}
+  - component: {fileID: 2892515490912620237}
   m_Layer: 0
   m_Name: Stunning shield
   m_TagString: Untagged
@@ -75,18 +75,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e07abda5564eab4997aafc95e4a77cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7698744017749357138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290598958491530633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b00e6b3882dd96944801a3837b4a5423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5889600089486691340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +88,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 6
+--- !u!114 &2892515490912620237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290598958491530633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00e6b3882dd96944801a3837b4a5423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &833668072283206061
 GameObject:
   m_ObjectHideFlags: 0

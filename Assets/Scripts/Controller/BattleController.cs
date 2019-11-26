@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class BattleController : StateMachine
 {
@@ -20,6 +21,14 @@ public class BattleController : StateMachine
     public ComputerPlayer cpu;
     void Awake()
     {
-        ChangeState<InitBattleState>();
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Campaign1")
+            ChangeState<InitCampaign1>();
+        else if (scene.name == "Campaign2")
+            ChangeState<InitCampaign2>();
+        else if (scene.name == "Campaign3") 
+            ChangeState<InitCampaign3>();
+        else
+            ChangeState<InitCampaign1>();
     }
 }

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6541412644371039547}
   - component: {fileID: 595062327794496582}
   - component: {fileID: 1207930153689886654}
-  - component: {fileID: 7649098978248834331}
+  - component: {fileID: 646468064879652100}
   m_Layer: 0
-  m_Name: Attack
+  m_Name: Range Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e07abda5564eab4997aafc95e4a77cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7649098978248834331
+--- !u!114 &646468064879652100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

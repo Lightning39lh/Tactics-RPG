@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: Archer
   job: Archer
-  attack: Range Common/Attack
+  attack: Range Common/Range Attack
   abilityCatalog: 
   locomotion: 0
   alliance: 4

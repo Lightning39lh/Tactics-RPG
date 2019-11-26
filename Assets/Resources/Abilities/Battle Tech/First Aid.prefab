@@ -82,10 +82,10 @@ GameObject:
   - component: {fileID: 7305079072574841801}
   - component: {fileID: 3531898271148763313}
   - component: {fileID: 1097985286902517288}
-  - component: {fileID: 3244360338003039416}
   - component: {fileID: 1921340399953768705}
+  - component: {fileID: -1871802188448473935}
   m_Layer: 0
-  m_Name: Cure
+  m_Name: First Aid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4e232984baef94cad5e7e7392f7698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 40
+  level: 15
 --- !u!114 &1097985286902517288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,22 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04059720dd428f34db08a6a9dedfbf28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal: 4
-  vertical: 2147483647
---- !u!114 &3244360338003039416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5146121827924077517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e3b2dc4d7c7c544fa77b7fb5a080d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   horizontal: 1
-  vertical: 1
+  vertical: 2147483647
 --- !u!114 &1921340399953768705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +158,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bde2744d1c68514ea6dbee43263cafc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 6
+  amount: 4
+--- !u!114 &-1871802188448473935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146121827924077517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00e6b3882dd96944801a3837b4a5423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8377370387310598752
 GameObject:
   m_ObjectHideFlags: 0

@@ -88,9 +88,9 @@ public class BoardCreator : MonoBehaviour
 	{
         string filePath = Application.dataPath + "/Resources/Levels";
         //Crea la carpeta/lugar
-        if (!Directory.Exists(filePath))
+      /*  if (!Directory.Exists(filePath))
              CreateSaveDirectory();
-        
+       */ 
         LevelData board = ScriptableObject.CreateInstance<LevelData>();
         board.tiles = new List<Vector3>(tiles.Count);
         //Aca se podria poner que tambien te guarde el tipo de material
@@ -98,10 +98,10 @@ public class BoardCreator : MonoBehaviour
            board.tiles.Add(new Vector3(t.pos.x, t.height, t.pos.y));
         
         string fileName = string.Format("Assets/Resources/Levels/{1}.asset", filePath, name);
-        AssetDatabase.CreateAsset(board, fileName);
+       // AssetDatabase.CreateAsset(board, fileName);
     }
 
-    void CreateSaveDirectory()
+   /* void CreateSaveDirectory()
     {
         string filePath = Application.dataPath + "/Resources";
         if (!Directory.Exists(filePath))
@@ -110,7 +110,7 @@ public class BoardCreator : MonoBehaviour
         if (!Directory.Exists(filePath))
             AssetDatabase.CreateFolder("Assets/Resources", "Levels");
         AssetDatabase.Refresh();
-    }
+    }*/
 
     public void Load()
 	{

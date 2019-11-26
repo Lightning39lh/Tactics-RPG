@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   list:
   - messages:
-    - Oh no perdi contra la waifu
+    - oh... I lose :S
     speaker: {fileID: 21300000, guid: 27a054fbcd314ec4390b69dad5f38c66, type: 3}
     anchor: 2
   - messages:

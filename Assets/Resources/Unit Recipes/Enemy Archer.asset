@@ -15,7 +15,7 @@ MonoBehaviour:
   model: Archer
   job: Archer
   attack: Range Common/Range Attack
-  abilityCatalog: 
+  abilityCatalog: Archer
   locomotion: 0
   alliance: 4
   strategy: Archer Attack Pattern

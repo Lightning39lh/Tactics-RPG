@@ -7,6 +7,7 @@ public class StatPanel : MonoBehaviour
     public Sprite allyBackground;
     public Sprite enemyBackground;
     public Image background;
+    //public Image avatar;
     public Image avatar;
     public Text nameLabel;
     public Text hpLabel;
@@ -17,6 +18,7 @@ public class StatPanel : MonoBehaviour
         Alliance alliance = obj.GetComponent<Alliance>();
         background.sprite = alliance.type == Alliances.Enemy ? enemyBackground : allyBackground;
         // avatar.sprite = null; Need a component which provides this data
+        
         nameLabel.text = obj.name;
         Stats stats = obj.GetComponent<Stats>();
         if (stats)

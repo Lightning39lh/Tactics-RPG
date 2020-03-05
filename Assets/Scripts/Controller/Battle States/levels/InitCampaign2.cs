@@ -21,40 +21,75 @@ public class InitCampaign2 : BattleState
         yield return null;
         owner.ChangeState<CutSceneState>();
     }
-
     void SpawnTestUnits()
-    {
-        string[] recipes = new string[]
+    { 
+    string[] recipes = new string[]
         {
-    "Lightning",
-    "Izrad",
-    "Sils",
-    "Enemy Rogue",
-    "Enemy Warrior",
-    "Enemy Wizard"
+    "Blödgarm",
+    "Knight",
+    "Cavalier",
+    "Enemy Knight2",
+    "Enemy White Mage",
+    "Enemy Archer"
         };
-        List<Tile> locations = new List<Tile>(board.tiles.Values);
-        for (int i = 0; i < recipes.Length; ++i)
-        {
-            int level = UnityEngine.Random.Range(9, 12);
-            GameObject instance = UnitFactory.Create(recipes[i], level);
-            int random = UnityEngine.Random.Range(0, locations.Count);
-            Tile randomTile = locations[random];
-            locations.RemoveAt(random);
-            Unit unit = instance.GetComponent<Unit>();
-            unit.Place(randomTile);
-            unit.dir = (Directions)UnityEngine.Random.Range(0, 4);
-            unit.Match();
-            units.Add(unit);
-        }
+    List<Tile> locations = new List<Tile>(board.tiles.Values);
+    Tile TileBlödgarm = locations[80];
+    Tile TileKnight = locations[94]; 
+    Tile TileCavalier = locations[64];
+    Tile TileEnemyKnight = locations[72];
+    Tile TileEnemyWhiteMage = locations[86];
+    Tile TileEnemyArcher = locations[102];
+
+
+    int level = 2;
+    GameObject instance = UnitFactory.Create(recipes[0], level);
+    Unit unit = instance.GetComponent<Unit>();
+
+    unit.Place(TileBlödgarm);
+    unit.dir = (Directions) UnityEngine.Random.Range(0, 4);
+    unit.Match();
+    units.Add(unit);
+
+    instance = UnitFactory.Create(recipes[1], level);
+    unit = instance.GetComponent<Unit>();
+    unit.Place(TileCavalier);
+    unit.dir = (Directions) UnityEngine.Random.Range(0, 4);
+    unit.Match();
+    units.Add(unit);
+    
+    instance = UnitFactory.Create(recipes[2], level);
+    unit = instance.GetComponent<Unit>();
+    unit.Place(TileKnight);
+    unit.dir = (Directions)UnityEngine.Random.Range(0, 4);
+    unit.Match();
+    units.Add(unit);
+    level = 1;
+    instance = UnitFactory.Create(recipes[3], level);
+    unit = instance.GetComponent<Unit>();
+    unit.Place(TileEnemyWhiteMage);
+    unit.dir = (Directions)UnityEngine.Random.Range(0, 4);
+    unit.Match();
+    units.Add(unit);
+    
+    instance = UnitFactory.Create(recipes[4], level);
+    unit = instance.GetComponent<Unit>();
+    unit.Place(TileEnemyKnight);
+    unit.dir = (Directions)UnityEngine.Random.Range(0, 4);
+    unit.Match();
+    
+    units.Add(unit);
+    instance = UnitFactory.Create(recipes[5], level);
+    unit = instance.GetComponent<Unit>();
+    unit.Place(TileEnemyArcher);
+    unit.dir = (Directions)UnityEngine.Random.Range(0, 4);
+    unit.Match();
+    units.Add(unit);
+
         SelectTile(units[0].tile.pos);
-    }
-    void AddVictoryCondition()
+}
+void AddVictoryCondition()
     {
-        DefeatTargetVictoryCondition vc = owner.gameObject.AddComponent<DefeatTargetVictoryCondition>();
-        Unit enemy = units[units.Count - 1];
-        vc.target = enemy;
-        Health health = enemy.GetComponent<Health>();
-        health.MinHP = 10;
+        DefeatAllEnemiesVictoryCondition vc = owner.gameObject.AddComponent<DefeatAllEnemiesVictoryCondition>();
+       
     }
 }

@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ae743427a4ebc4bba079d908140a8f, type: 3}
   m_Name: Cavalier
   m_EditorClassIdentifier: 
-  categories: []
+  categories:
+  - name: Battle Tech
+    entries:
+    - First Aid

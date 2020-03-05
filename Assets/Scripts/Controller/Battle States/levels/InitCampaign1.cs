@@ -32,7 +32,7 @@ public class InitCampaign1 : BattleState
         List<Tile> locations = new List<Tile>(board.tiles.Values);
         Tile TileBlödgarm = locations[29];
         Tile TileCavalier = locations[33];
-        int level = 4;
+        int level = 2;
         GameObject instance = UnitFactory.Create(recipes[0], level);
         Unit unit = instance.GetComponent<Unit>();
         
@@ -57,6 +57,6 @@ public class InitCampaign1 : BattleState
         Unit enemy = units[units.Count - 1];
         vc.target = enemy;
         Health health = enemy.GetComponent<Health>();
-        health.MinHP = 45;
+        health.MinHP = 35;
     }
 }

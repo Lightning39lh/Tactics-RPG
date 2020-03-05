@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a5242bd9c9a5840abeb69aa71d8db3, type: 3}
+  m_Name: OutroCampaign2Win
+  m_EditorClassIdentifier: 
+  list:
+  - messages:
+    - "bl\xF6dgarm, thanks for coming"
+    - I was afraid that you forget about me
+    speaker: {fileID: 21300000, guid: 293a39b6a68b5b74790360b33f7aa085, type: 3}
+    anchor: 2
+  - messages:
+    - I could never forget you
+    - After all, you are here because of me
+    speaker: {fileID: 21300000, guid: 3ad91e35d6ead6044a8ae1bb366d6f62, type: 3}
+    anchor: 6
+  - messages:
+    - I'm sorry, I was very careless
+    - But at least I discovered that Sadacros is plotting something in Keloth
+    - and will take place only in a week!
+    speaker: {fileID: 21300000, guid: 293a39b6a68b5b74790360b33f7aa085, type: 3}
+    anchor: 0
+  - messages:
+    - I didn't expect less from you, good job
+    speaker: {fileID: 21300000, guid: 3ad91e35d6ead6044a8ae1bb366d6f62, type: 3}
+    anchor: 6

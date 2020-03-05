@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a5242bd9c9a5840abeb69aa71d8db3, type: 3}
+  m_Name: IntroCampaign2
+  m_EditorClassIdentifier: 
+  list:
+  - messages:
+    - "Bl\xF6dgarm, do you remind me why we are here?"
+    speaker: {fileID: 21300000, guid: 5d113490f051b2646995aa59ec189c60, type: 3}
+    anchor: 0
+  - messages:
+    - To save Lightning who is in this prison
+    speaker: {fileID: 21300000, guid: 3ad91e35d6ead6044a8ae1bb366d6f62, type: 3}
+    anchor: 8
+  - messages:
+    - But if he is in prison it means he is a bad person
+    - Why do we have to release him?
+    speaker: {fileID: 21300000, guid: 5d113490f051b2646995aa59ec189c60, type: 3}
+    anchor: 0
+  - messages:
+    - He's not bad, I suspected that Sadacros was plotting something and asked him
+      to investigate
+    - The good thing is that I was right, the bad is that he was discovered
+    speaker: {fileID: 21300000, guid: 3ad91e35d6ead6044a8ae1bb366d6f62, type: 3}
+    anchor: 8
+  - messages:
+    - You would have started there! That Sadacros seems to be a very bad person
+    speaker: {fileID: 21300000, guid: 5d113490f051b2646995aa59ec189c60, type: 3}
+    anchor: 0
+  - messages:
+    - '...'
+    speaker: {fileID: 21300000, guid: 3ad91e35d6ead6044a8ae1bb366d6f62, type: 3}
+    anchor: 8

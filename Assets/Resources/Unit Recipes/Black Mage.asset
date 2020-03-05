@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f9e3b4ec651754e85af614c212a193, type: 3}
   m_Name: Black Mage
   m_EditorClassIdentifier: 
-  model: Black Mage
+  model: Mage2
   job: Black Mage
   attack: Common/Attack
-  abilityCatalog: Black Mage
+  abilityCatalog: Black Magic
   locomotion: 0
   alliance: 2
   strategy: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   model: Bomb
   job: Bomb
   attack: Common/Attack
-  abilityCatalog: 
+  abilityCatalog: Bomb
   locomotion: 0
   alliance: 4
   strategy: Bomb Attack Pattern

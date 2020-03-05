@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ad11d89a4d9bd499b9f9d999b5b960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseStats: 2b000000050000003d000000590000000b0000003a00000064000000
+  baseStats: 2b000000060000003d0000004f0000000b0000003a00000064000000
   growStats:
   - 8.4
   - 0.8
